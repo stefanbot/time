@@ -1,0 +1,344 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+.mainwrap {
+	width: 100%;
+	height: auto;
+}
+.logo h1 {
+	background: url("images/clock.png");
+	background-position: left;
+	background-repeat: no-repeat;
+	padding-left: 35px;
+	float: left;
+	font-family: 'Comfortaa';
+	font-size: 45px;
+}
+li {
+	margin-left: 15px;
+	display: inline;
+}
+nav a {
+	border: 1px solid white;
+	padding: 10px;
+	font-family: sans-serif;
+	font-size: 25px;
+	text-decoration: none;
+	color: #545454;
+}
+nav a:hover {
+	margin: 0px !important;
+	transition: background 0.5s ease;
+	background-color: black;
+	color: white;
+}
+nav {
+	padding-top: 25px;
+	margin: auto;
+	width: 65%;
+}
+.header {
+	z-index: 999;
+	top: 0;
+	width: 100%;
+	position: fixed;
+	border-bottom: 1px solid black;
+	background: white;
+	height: 80px;
+}
+ul {
+	margin-right: 10%;
+	float: right;
+}
+@media (max-width: 1280px) {
+	ul {
+		display: none;
+	}
+}
+.midwrap {
+	width: 100%;
+}
+.mid {
+	background-image: url("images/mid.jpg");
+	background-repeat: no-repeat;
+	background-size: contain;
+	width: 100%;
+	min-height: 1080px;
+}
+@media (max-width: 1280px) {
+	.mid {
+		min-height: 800px;
+	}
+}
+.mid-content {
+	position: absolute;
+	margin: 0 auto;
+	background-color: #848282;
+	background: rgba(0,0,0,0.4);
+	margin-top: 20%;
+	color: white;
+	height: 40%;
+	width: 80%;
+	margin-left: 10%;
+}
+@media (max-width: 1279px) {
+	.mid-content {
+		display: none;
+	}
+}
+.mid-content h1 {
+	text-shadow: 0 0 1px black;
+	font-size: 45px;
+	font-family: 'Comfortaa';
+}
+@media (max-width: 1280px) {
+	.mid-content h1 {
+		font-size: 20px;
+	}
+}
+.textwrap ul {
+	display: none;
+}
+@media (max-width: 1279px) {
+	.textwrap ul {
+		display: block;
+	}
+}
+.mid-content p {
+	font-size: 18px;
+	text-shadow: 0 0 1px black;
+	width: 55%;
+	padding: 10px;
+}
+@media (max-width: 1280px) {
+	.mid-content p {
+		font-size: 12px;
+	}
+}
+@media (max-width: 1279px) {
+	.mid-content p {
+		display: none;
+	}
+}
+.textwrap {
+	margin-top: 5%;
+	width: 40%;
+}
+form {
+	width: 50%;
+	margin-top: 15%;
+}
+.mid input[type=text] {
+	background-color: #cfcbcc;
+	padding: 10px;
+	width: 60%;
+	height: 40px;
+	border: none;
+}
+.mid input[type=text]:focus {
+	outline:none;
+	box-shadow: 0px 0px 5px #b1aeae;
+}
+.midcontentwrap {
+	width: 80%;
+	margin: auto;
+}
+input[type=submit] {
+	border: none;
+	height: 40px;
+}
+input[type=submit]:hover {
+	color: white;
+	background-color: black;
+	border: 1px solid white;
+}
+.products {
+	margin: auto;
+	width: 100%;
+	height: 500px;
+}
+@media (max-width: 1279px) {
+	.products {
+		display: none;
+	}
+}
+.product1, .product2, .product3, .product4, .product5, .product6 {
+	margin-left: 10px;
+	margin-top: 10px;
+	width: 30%;
+	height: 50%;
+	border: 1px solid black;
+}
+.product1 {
+	background-image: url("images/watch1.jpeg");
+	background-position: contain;
+	background-size: 100% 100%;
+	background-repeat: no-repeat;
+}
+.product2 {
+	background-image: url("images/watch2.jpeg");
+	background-position: contain;
+	background-size: 100% 100%;
+	background-repeat: no-repeat;
+}
+.product3 {
+	background-image: url("images/watch3.jpeg");
+	background-position: contain;
+	background-size: 100% 100%;
+	background-repeat: no-repeat;
+}
+.product4 {
+	background-image: url("images/watch4.jpeg");
+	background-position: contain;
+	background-size: 100% 100%;
+	background-repeat: no-repeat;
+}
+.product5 {
+	background-image: url("images/watch5.jpeg");
+	background-position: contain;
+	background-size: 100% 100%;
+	background-repeat: no-repeat;
+}
+.product6 {
+	background-image: url("images/watch6.jpeg");
+	background-position: contain;
+	background-size: 100% 100%;
+	background-repeat: no-repeat;
+}
+.product1:hover, .product2:hover, .product3:hover, .product4:hover, .product5:hover, .product6:hover {
+	opacity: 0.5;
+}
+.aboutme {
+	margin-top: 100px;
+	width: 100%;
+	height: auto;
+}
+.about-background {
+	background: url("images/aboutbk.jpeg");
+	background-repeat: no-repeat;
+	background-position: contain;
+	background-size: cover;
+	width: 100%;
+	height: 100%;
+	min-height: 306px;
+}
+.aboutme h1 {
+	color: white;
+	text-shadow: 0 0 2px black;
+	font-size: 45px;
+	font-family: 'Comfortaa';
+}
+.aboutme p {
+	color: white;
+	font-size: 18px;
+	text-shadow: 0 0 1px black;
+	width: 55%;
+	padding: 10px;
+}
+.text1 {
+	padding-top: 50px;
+	width: 80%;
+	margin: auto;
+}
+.contactform {
+	width: 80%;
+	margin: auto;
+}
+.contactform input[type=text], .contactform input[type=email], textarea {
+	resize: none;
+	width: 70%;
+	height: 40px;
+	border: 1px solid black;
+	margin-top: 5px;
+	padding: 10px;
+	background-color: #dad7d8;
+}
+textarea {
+	height: 250px;
+}
+.contactnumbers {
+	margin-top: 15%;
+}
+h2 {
+	border-bottom: 2px solid #b9b8b8;
+	padding-top: 15px;
+	font-size: 25px;
+	font-family: 'Comfortaa';
+}
+.footer {
+	margin-top: 20px;
+	background: url("images/footer.jpg");
+	color: white;
+	background-repeat: no-repeat;
+	background-size: contain;
+	background-size: cover;
+	width: 100%;
+	min-height: 382px;
+}
+.footer h2 {
+	font-size: 18px;
+	padding-top: 40px;
+	border: none;
+}
+.footer p, .social p {
+	padding-top: 40px;
+	font-size: 16px;
+}
+.social {
+	padding-top: 20px;
+	width: 100%;
+	margin: auto;
+	clear: both;
+}
+.footer1 {
+	width: 35%;
+}
+.footerwraper {
+	width: 80%;
+	margin: 0 auto;
+}
